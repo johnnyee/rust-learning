@@ -1,0 +1,6 @@
+# Cargo 配置文件
+# 解决 Git Bash 环境下 link.exe 冲突问题
+
+[target.x86_64-pc-windows-msvc]
+# 直接指定 MSVC 链接器的完整路径，避免 PATH 查找时误用 Git 的 link.exe
+linker = "D:\\Program Files\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe"
