@@ -4,3 +4,11 @@
 [target.x86_64-pc-windows-msvc]
 # 直接指定 MSVC 链接器的完整路径，避免 PATH 查找时误用 Git 的 link.exe
 linker = "D:\\Program Files\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe"
+
+[env]
+# 设置库文件搜索路径，让链接器能找到 kernel32.lib 等系统库
+# 包含三个路径：
+#   1. MSVC 运行时库
+#   2. Windows UCRT (Universal C Runtime) 库
+#   3. Windows UM (User Mode) 库
+LIB = "D:\\Program Files\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\lib\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22621.0\\ucrt\\x64;C:\\Program Files (x86)\\Windows Kits\\10\\Lib\\10.0.22621.0\\um\\x64"
