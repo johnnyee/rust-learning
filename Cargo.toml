@@ -1,0 +1,21 @@
+[package]
+name = "rust_learning"
+version = "0.1.0"
+edition = "2024"
+authors = ["JohnYe <johnnyee@example.com>"]
+description = "JohnYe 的 Rust 语言学习项目 - 从零开始掌握 Rust"
+repository = "https://github.com/johnnyee/rust-learning"
+license = "MIT"
+readme = "README.md"
+keywords = ["rust", "learning", "tutorial", "beginner"]
+categories = ["development-tools"]
+
+[dependencies]
+
+# 开发依赖
+[dev-dependencies]
+
+# 性能优化配置
+[profile.release]
+opt-level = 3
+lto = true
