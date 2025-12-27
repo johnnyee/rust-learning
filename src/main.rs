@@ -16,6 +16,10 @@
 //   cargo run 2  -> impl 块与方法
 //   cargo run 3  -> 关联函数（String::from 的秘密）
 //
+// 【文档注释】本程序
+//   cargo run 4  -> 什么是文档注释
+//   cargo run 5  -> 文档测试（Doc Test）
+//
 // ============================================================
 
 mod learning;
@@ -32,6 +36,8 @@ fn main() {
             "1" | "struct" => learning::structs_methods::run_01_struct(),
             "2" | "impl" => learning::structs_methods::run_02_impl(),
             "3" | "from" | "associated" => learning::structs_methods::run_03_associated(),
+            "4" | "doc" => learning::doc_comments::run_01_doc_comment(),
+            "5" | "doctest" => learning::doc_comments::run_02_doc_test(),
             _ => print_help(),
         }
     } else {
@@ -60,6 +66,11 @@ fn print_help() {
     println!("║  cargo run 1    什么是结构体                                 ║");
     println!("║  cargo run 2    impl 块与方法                                ║");
     println!("║  cargo run 3    关联函数（String::from 的秘密！）            ║");
+    println!("║                                                              ║");
+    println!("║  📕 文档注释与文档测试                                       ║");
+    println!("║  ─────────────────────────────────────────────────────────   ║");
+    println!("║  cargo run 4    什么是文档注释                               ║");
+    println!("║  cargo run 5    文档测试（最强大的功能！）                   ║");
     println!("║                                                              ║");
     println!("╚══════════════════════════════════════════════════════════════╝");
     println!();
