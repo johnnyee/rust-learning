@@ -55,6 +55,12 @@ pub fn run() {
         email: String::from("john@example.com"),
     };
 
+    // let user2 = User {
+    //     name: String::from("Alice"),
+    //     age: 30,
+    //     email: String::from("alice@example.com"),
+    // };
+
     println!("  创建了一个 User 结构体实例：");
     println!("  user1.name  = \"{}\"", user1.name);
     println!("  user1.age   = {}", user1.age);
