@@ -1,0 +1,17 @@
+[package]
+name = "c05-structs"
+version = "0.1.0"
+edition = "2021"
+description = "Rust 结构体学习模块 - 结构体定义、impl 块、关联函数"
+
+[[bin]]
+name = "c05-what-is-struct"
+path = "src/bin/what_is_struct.rs"
+
+[[bin]]
+name = "c05-impl-block"
+path = "src/bin/impl_block.rs"
+
+[[bin]]
+name = "c05-associated-fn"
+path = "src/bin/associated_fn.rs"

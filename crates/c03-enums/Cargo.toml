@@ -1,0 +1,13 @@
+[package]
+name = "c03-enums"
+version = "0.1.0"
+edition = "2021"
+description = "Rust 枚举学习模块 - 模式匹配、if let"
+
+[[bin]]
+name = "c03-pattern-matching"
+path = "src/bin/pattern_matching.rs"
+
+[[bin]]
+name = "c03-if-let"
+path = "src/bin/if_let.rs"

@@ -1,0 +1,13 @@
+[package]
+name = "c02-borrowing"
+version = "0.1.0"
+edition = "2021"
+description = "Rust 借用学习模块 - 不可变借用、可变借用"
+
+[[bin]]
+name = "c02-basics"
+path = "src/bin/basics.rs"
+
+[[bin]]
+name = "c02-mutable"
+path = "src/bin/mutable.rs"

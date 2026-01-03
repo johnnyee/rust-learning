@@ -1,0 +1,13 @@
+[package]
+name = "c06-docs"
+version = "0.1.0"
+edition = "2021"
+description = "Rust 文档注释学习模块 - 文档注释、文档测试"
+
+[[bin]]
+name = "c06-doc-comment"
+path = "src/bin/doc_comment.rs"
+
+[[bin]]
+name = "c06-doc-test"
+path = "src/bin/doc_test.rs"

@@ -1,0 +1,17 @@
+[package]
+name = "c01-ownership"
+version = "0.1.0"
+edition = "2021"
+description = "Rust 所有权学习模块 - 所有权基础、Move 语义、Copy trait"
+
+[[bin]]
+name = "c01-basics"
+path = "src/bin/basics.rs"
+
+[[bin]]
+name = "c01-move-semantics"
+path = "src/bin/move_semantics.rs"
+
+[[bin]]
+name = "c01-copy-trait"
+path = "src/bin/copy_trait.rs"

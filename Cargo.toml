@@ -1,7 +1,23 @@
+# ============================================================
+# Rust 学习项目 - Cargo Workspace 配置
+# ============================================================
+
+[workspace]
+resolver = "2"
+members = [
+    "crates/c01-ownership",
+    "crates/c02-borrowing",
+    "crates/c03-enums",
+    "crates/c04-collections",
+    "crates/c05-structs",
+    "crates/c06-docs",
+]
+
+# 主程序包（交互式菜单）
 [package]
 name = "rust_learning"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 authors = ["JohnYe <johnnyee@example.com>"]
 description = "JohnYe 的 Rust 语言学习项目 - 从零开始掌握 Rust"
 repository = "https://github.com/johnnyee/rust-learning"
@@ -12,10 +28,9 @@ categories = ["development-tools"]
 
 [dependencies]
 
-# 开发依赖
 [dev-dependencies]
 
-# 性能优化配置
+# 性能优化配置（应用于所有 workspace 成员）
 [profile.release]
 opt-level = 3
 lto = true

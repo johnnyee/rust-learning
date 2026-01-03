@@ -1,0 +1,9 @@
+[package]
+name = "c04-collections"
+version = "0.1.0"
+edition = "2021"
+description = "Rust 集合学习模块 - Vec、HashMap、HashSet"
+
+[[bin]]
+name = "c04-basics"
+path = "src/bin/basics.rs"
